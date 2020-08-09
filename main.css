@@ -9,7 +9,7 @@
   height: 700px;
   border: 1px solid white;
   position: absolute;
-  top: 6%;
+  top: 3%;
   left: 15%;
 }
 
@@ -18,10 +18,11 @@
   padding: 10px;
   border-radius: 5px;
   height: 50px;
-  width: 80%;
+  width: 90%;
   position: relative;
-  left: 8%;
+  left: 4%;
   top: 3%;
+
 }
 
 .header h2{
@@ -31,4 +32,68 @@
   font-size: 30px;
   position: relative;
   top: 20%;
+}
+
+.screen-wrapper{
+  background: skyblue;
+  height: 150px;
+  width: 92%;
+  margin: auto;
+  position: relative;
+  top: 4%;
+  right: 0.2%;
+  left: 0.4%;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.keypad-wrapper{
+  margin: auto;
+  padding 10px;
+  position: relative;
+  top: 8%;
+}
+
+.keypads{
+  background: lightgrey;
+  height: 440px;
+
+}
+
+.col-1{
+  position: relative;
+  top: 15%;
+}
+
+.col-1 .num{
+  text-align: center;
+  padding: 10px;
+}
+
+.col-1 .num h3{
+  position: relative;
+  top: 30%;
+  bottom: 50%;
+}
+
+#row{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  position: relative;
+  left: 6%;
+}
+
+
+.keypads .num{
+  width: 100px;
+  height: 60px;
+  background: black;
+  color: white;
+  border-radius: 8px;
+}
+
+#row .col-1{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5em;
 }
