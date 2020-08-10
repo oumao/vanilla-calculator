@@ -47,11 +47,21 @@
   border: 1px solid black;
 }
 
+#row{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 0.3em;
+  position: relative;
+  left: 3%;
+}
+
+
 .keypad-wrapper{
+  width: 90%;
   margin: auto;
   padding 10px;
   position: relative;
-  top: 8%;
+  top: 5%;
 }
 
 .keypads{
@@ -60,9 +70,15 @@
 
 }
 
+#row .col-1{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5em;
+}
+
 .col-1{
   position: relative;
-  top: 15%;
+  top: 9%;
 }
 
 .col-1 .num{
@@ -76,13 +92,6 @@
   bottom: 50%;
 }
 
-#row{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  position: relative;
-  left: 6%;
-}
-
 
 .keypads .num{
   width: 100px;
@@ -92,8 +101,31 @@
   border-radius: 8px;
 }
 
-#row .col-1{
+#row .col-2{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.1em;
+  position: relative;
+  top: 15%;
+  right: 6%;
+}
+
+.col-2{
+
+}
+
+.col-2 .sign{
+  text-align: center;
+  padding: 10px;
+  width: 80px;
+  height: 40px;
+  background: teal;
+  color: white;
+  border-radius: 8px;
+}
+
+.col-2 .sign h4{
+  position: relative;
+  top: 30%;
+  bottom: 50%;
 }
